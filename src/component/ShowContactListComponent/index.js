@@ -73,7 +73,7 @@ class ShowListContactComponent extends React.Component {
     rows.forEach((element, index) => {
       if (index === idx) {
         element.disabled = true;
-        element.isSave = element.formErrors===true?false:true
+        element.isSave = element.formErrors===true||element.formErrors==="" ?false:true
       }
     });
 
