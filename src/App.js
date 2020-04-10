@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-// import ListContactComponent from './component/ListContactComponent';
+import ListContactComponent from './component/ListContactComponent';
 import AddContactComponent from './component/AddContactComponent';
-// import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <AddContactComponent />
-       {/* <Router >
+       <Router >
        <ul> 
        <li> 
         <Link className='text-link' to="/contactlist">Home</Link> 
@@ -24,7 +23,7 @@ function App() {
           <Route exact path="/Tablelist" component={ListContactComponent} />
         </Switch>
        
-        </Router> */}
+        </Router>
        
     </div>
   );
