@@ -110,6 +110,9 @@ export const validateField = (fieldName, value) => {
         ? "Please enter valid number"
         : true;
       break;
+    case "status":
+      fieldValidationError = true;
+      break;
     default:
       break;
   }

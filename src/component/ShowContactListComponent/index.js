@@ -26,11 +26,11 @@ class ShowListContactComponent extends React.Component {
     let isSave;
     let rownumber=idx + 1;
     let fieldValidationError = validationResult.fieldValidationError;
-
+    fieldValidationError=name==="status" ? newRows[idx].formErrors :fieldValidationError
     if (fieldValidationError === true) {
       isSave = true;
     } else {
-      fieldValidationError = fieldValidationError + " at row:" + rownumber;
+      fieldValidationError = name==="status"? fieldValidationError : fieldValidationError + " at row:" + rownumber;
       isSave = false;
     }
 
