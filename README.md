@@ -17,7 +17,7 @@ You should be able to run the following command after the installation procedure
 below.
 
     $ node --version
-    v0.16.2
+    10.16.2
 
     $ npm --version
     6.9.0
