@@ -9,7 +9,7 @@ function App() {
        <Router >
        <ul> 
        <li> 
-        <Link className='text-link' to="/">Home</Link> 
+        <Link className='text-link' to="/contactlist">Home</Link> 
       </li> 
       <li> 
         <Link className='text-link' to="/Tablelist">Material UI</Link> 
@@ -17,7 +17,7 @@ function App() {
       <AddContactComponent />
     </ul> 
       <Switch>
-          <Route exact path="/">
+          <Route exact path="/contactlist">
             <AddContactComponent />
           </Route>
           <Route exact path="/Tablelist" component={ListContactComponent} />
