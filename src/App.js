@@ -16,7 +16,7 @@ function App() {
       </li> 
     </ul> 
       <Switch>
-          <Route  path="/">
+          <Route  path="/contactlist/">
             <AddContactComponent />
           </Route>
           <Route exact path="/Tablelist" component={ListContactComponent} />
